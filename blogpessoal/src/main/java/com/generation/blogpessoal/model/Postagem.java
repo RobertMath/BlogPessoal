@@ -41,6 +41,10 @@ public class Postagem {
 	@JsonIgnoreProperties("postagem")
 	private Tema tema;
 	
+	@ManyToOne
+	@JsonIgnoreProperties("usuario")
+	private Usuario usuario;
+	
 	//metodos para acessar essas variaveis 
 		//criar para ter acesso aos valores
 	public Long getId() {
@@ -72,6 +76,12 @@ public class Postagem {
 	}
 	public void setTema(Tema tema) {
 		this.tema = tema;
+	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 	
 }
