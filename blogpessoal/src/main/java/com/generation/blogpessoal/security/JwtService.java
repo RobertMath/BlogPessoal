@@ -15,7 +15,8 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
-@Component
+@Component //diz que esse objeto é um componente que faz parte do Spring
+			//iniciando junto com o projeto e estando acessevil por todaos
 public class JwtService {
 	//key gerada com a frase "generation.com"
 	//no site "https://emn178.github.io/online-tools/sha256.html"
